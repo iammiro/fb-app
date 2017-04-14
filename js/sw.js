@@ -4,13 +4,14 @@ this.addEventListener('install', function(event) {
             return cache.addAll([
                 '/',
                 '/index.html',
-                '/style.css',
-                '/app.js',
+                '/css/style.css',
+                '/css/reset.css',
+                '/js/app.js',
                 '/manifest.json',
-                '/star-wars-logo.jpg',
-                '/gallery/bountyHunters.jpg',
-                '/gallery/snowTroopers.jpg',
-                '/gallery/myLittleVader.jpg'
+                '/icons/logo.png',
+                '/js/shake.js',
+                '/js/shake-custom.js',
+                'https://connect.facebook.net/en_US/sdk.js'
             ]);
         })
     );
