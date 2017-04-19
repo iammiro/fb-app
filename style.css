@@ -44,6 +44,10 @@ body {
     background-color: #4065b4;
 }
 
+#logo {
+    margin-left: 10px;
+}
+
 .content {
     width: 100%;
     height: 100vh;
@@ -55,20 +59,88 @@ body {
 }
 
 .post {
-    width: 350px;
-    padding: 5px;
+    width: 320px;
+    padding: 8px 0;
     background-color: #ffffff;
 }
 
 .post-header {
-    width: 330px;
+    width: 300px;
+    height: 50px;
+}
+
+.post-header .column {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .post-header img {
     margin-right: 5px;
 }
 
+.name {
+    color: rgb(54, 88, 153);
+    cursor: pointer;
+    direction: ltr;
+    display: inline;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: auto;
+    line-height: 19.32px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    text-decoration-color: rgb(54, 88, 153);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    width: auto;
+    word-wrap: break-word;
+}
+
+.date, .location {
+    color: rgb(144, 148, 156);
+    cursor: pointer;
+    direction: ltr;
+    display: inline;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    height: auto;
+    line-height: 16.08px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    width: auto;
+    word-wrap: break-word;
+}
+
 .post-body p, .post-body img {
-    width: 330px;
+    width: 300px;
+    padding: 0 !important;
     margin: 5px 0;
+}
+
+.text {
+    color: rgb(29, 33, 41);
+    direction: ltr;
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 19.32px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 486px;
+    word-wrap: break-word;
+    -webkit-margin-after: 6px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-margin-start: 0px;
 }
