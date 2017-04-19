@@ -3,15 +3,20 @@ this.addEventListener('install', function(event) {
         caches.open('v1').then(function(cache) {
             return cache.addAll([
                 '/',
-                '/index.html',
-                '/css/style.css',
-                '/css/reset.css',
-                '/js/app.js',
-                '/manifest.json',
-                '/icons/logo.png',
-                '/js/shake.js',
-                '/js/shake-custom.js',
-                'https://connect.facebook.net/en_US/sdk.js'
+                'index.html',
+                'style.css',
+                'reset.css',
+                'icons/logo.png',
+                'images/logo.jpg',
+                'images/1.jpg',
+                'images/2.jpg',
+                'images/3.jpg',
+                'app.js',
+                'shake.js',
+                'shake-custom.js',
+                'manifest.json',
+                'handlebars.js',
+                'jquery.min.js'
             ]);
         })
     );
@@ -29,7 +34,7 @@ this.addEventListener('fetch', function(event) {
             });
             return response.clone();
         }).catch(function() {
-            return caches.match('/gallery/myLittleVader.jpg');
+            return caches.match('icons/logo.jpg');
         })
     );
 });

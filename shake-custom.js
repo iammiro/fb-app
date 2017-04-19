@@ -1,67 +1,12 @@
-<html>
-<head>
+var myShakeEvent = new Shake({
+    threshold: 15,
+    timeout: 1000
+});
+myShakeEvent.start();
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+window.addEventListener('shake', shakeEventDidOccur, false);
+function shakeEventDidOccur() {
 
-    <title>FB app</title>
-
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="manifest" href="manifest.json">
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Mobile App">
-
-    <link rel="apple-touch-icon" href="icons/icon-152x152.png">
-
-    <meta name="msapplication-TileImage" content="icons/icon-144x144.png">
-    <meta name="msapplication-TileColor" content="#2F3BA2">
-
-</head>
-<body>
-<header class="header">
-    <img src="icons/logo.png" alt="logo">
-</header>
-<section class="content">
-
-    <div id="insert-pos"></div>
-
-    <script id="div-template" type="text/x-handlebars-template">
-        <div class="post column center">
-            <div class="row flex-start post-header">
-                <div class="column center">
-                    <img src="{{avatar}}" alt="avatar">
-                </div>
-                <div class="column flex-start">
-                    <div class="row flex-start">
-                        <span>{{name}}</span>
-                    </div>
-                    <div class="row flex-start">
-                        <span>{{date}}</span>
-                        <span>{{location}}</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row center post-body">
-                <div class="column center">
-                    <p>{{text}}</p>
-                    <img src="{{img}}" alt="img">
-                </div>
-            </div>
-        </div>
-    </script>
-
-</section>
-<script src="app.js" type="text/javascript"></script>
-<script src="shake.js" type="text/javascript"></script>
-<script src="shake-custom.js" type="text/javascript"></script>
-<script src="handlebars.js"></script>
-<script src="jquery.min.js"></script>
-<script>
     function pickRandomProperty(obj) {
         var result;
         var count = 0;
@@ -107,6 +52,5 @@
 
     var html = template(data[key]);
     $("#insert-pos").html(html);
-</script>
-</body>
-</html>
+
+}

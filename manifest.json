@@ -1,6 +1,6 @@
 {
-  "name": "StarWars page",
-  "short_name": "StarWars",
+  "name": "FB-app",
+  "short_name": "FB-app",
   "icons": [
     {
       "src": "/icons/icon-128x128.png",
